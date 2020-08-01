@@ -1,8 +1,7 @@
 
 $(function() {
     
-    //TODO: build function to change devour
-
+    //function to change devour status
     $(".change-devour").on("click", function(event) {
         const id = $(this).data("id");
         const newDevour = $(this).data("newdevour");
@@ -11,7 +10,7 @@ $(function() {
             devoured: newDevour
         }
 
-        //TODO: Send the put request, use ajax call
+        //Send the put request, use ajax call
         $.ajax("/api/burgers/" + id, {
             type: "PUT",
             data: newDevourState
@@ -24,7 +23,25 @@ $(function() {
 
     })
 
-    //TODO: build create burger form & function
+    //create burger form & function
+    $(".create-form").on("click", function(event) {
+        event.preventDefault();
+
+        const newBurger = {
+            name: $("#burg").val().trim(),
+            // devoured: $("[name=devoured]:checked").val().trim();
+        };
+
+        //Send the Post request
+        $.ajax("/api/burgers/", {
+            type: "POST",
+            data: newBurger
+        }).then( function() {
+            console.log("Added new burger");
+            location.reload();
+        });
+
+    });
 
     
     //TODO: build delete burger function
