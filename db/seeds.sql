@@ -7,6 +7,6 @@ VALUES
 
 INSERT INTO burgers (name, devoured)
 VALUES 
-("I Don't Bay Leaf in Magic Burger"),
-("She's a Super Leek Burger"),
-("Running Out of Thyme Burger");
+("I Don't Bay Leaf in Magic Burger", true),
+("She's a Super Leek Burger", true),
+("Running Out of Thyme Burger", true);
