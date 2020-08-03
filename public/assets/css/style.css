@@ -1,0 +1,41 @@
+body {
+    background-color: #fcdd60;
+}
+
+h1 {
+    color: 	#f0262a;
+    text-align: center;
+}
+
+/* .container {
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: 25% 100px auto;
+}
+
+.rowOne 
+.rowTwo {
+    grid-column: span 12;
+}
+
+.colOne
+.colTwo {
+    grid-column: 2,span 4;
+} */
+
+button {
+    border-radius: 15%;
+    padding: 10px;
+    margin: 2px 10px;
+}
+.change-devour {
+    background-color: #95d244;
+}
+
+.delete-burger {
+    background-color: #9ac7e8;
+}
+
+.addABurger {
+    background-color: #f172a9;
+}
