@@ -16,7 +16,7 @@ h1 {
     color: 	#f0262a;
     font-size: 50px;
     text-align: center;
-    text-shadow: black;
+    text
 }
 
 .containerOne {
@@ -73,6 +73,12 @@ button {
 
 .addABurger {
     background-color: #f172a9;
+}
+
+
+.addBtn {
+    display: flex;
+    justify-content: center;
 }
 
 .heads {
