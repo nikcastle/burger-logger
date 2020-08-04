@@ -18,11 +18,8 @@ No installation is necessary for this to run
 
 ## Usage
 Open the deployed web page using the heroku link, type any burger name in to the input box and click 'Add Burger'. To 'eat' the burger, click 'Eat it!'. If you need to delete a burger, click 'Get Rid of It'.
-![Burger App](.public/assets/images/burgerapp.png);
-
-## Credits
+![Burger App](./assets/images/burgerapp.png);
  
-
 ## License
 GNU General Public License v3
 
