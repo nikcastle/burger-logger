@@ -1,13 +1,18 @@
+<header>
+    <img src="../assets/images/burgeroftheday.png" class="burger">
+</header>
+
+{{#if burgers}}
 <h1> Eat The Burger!</h1>
 
 <div class="container">
-<row class="rowOne">
+<div class="rowOne">
     <div class="colOne">
 <h2>Burgers to Eat</h2>
 <ul>
     {{#each burgers}}
         {{#unless devoured}}
-            {{>burgers/burger-block devoured=true}}
+            {{>burgers/burger-block devour=true}}
         {{/unless}}
     {{/each}}
 </ul>
@@ -23,8 +28,9 @@
     {{/each}}
 </ul>
 </div>
+{{/if}}
 
-<row class="rowTwo">
+<div class="rowTwo">
 <h2>Add a Burger</h2>
 <form class="create-form">
 
@@ -33,17 +39,15 @@
     <input type="text" id="burg" name="name">
   </div>
 
-</row>
-
-  {{!-- <div class="form-group">
-    <label for="devoured">Devoured?</label><br>
-    <input type="radio" name="devour" value="1" checked> Devoured!<br>
-    <input type="radio" name="devour" value="0"> Not Devoured!
-  </div> --}}
+</div>
 
   <button type="submit" class="addABurger">Add Burger</button>
 </form>
 
-</row>
 </div>
+</div>
+
+<footer>
+    <img src="../assets/images/family-heads.png" class="heads">
+</footer>
 
