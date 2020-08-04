@@ -13,6 +13,8 @@ body {
 }
 
 h1 {
+    background-color: #fef4cf;
+    border-radius: 15%;
     color: 	#f0262a;
     font-size: 50px;
     text-align: center;
@@ -20,11 +22,19 @@ h1 {
 }
 
 .containerOne {
+    border-radius: 15%;
     display: flex;
     justify-content: space-around;
     flex-direction: row;
     flex-wrap: nowrap;
     
+}
+
+.eaten,
+.not-eaten {
+    background-color: #fef4cf;
+    padding: 20px;
+    width: auto;
 }
 
 .item {
@@ -85,6 +95,10 @@ button {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    height: 300px;
-    width: 800px;
+    height: 180px;
+    width: 500px;
+}
+
+footer {
+    background-color: white;
 }
